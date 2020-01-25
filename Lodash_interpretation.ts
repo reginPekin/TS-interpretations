@@ -32,3 +32,10 @@ const flatternDeep = (array: any[]) => {
   }
   return result;
 };
+
+// Returns an object composed from key-value pairs.
+const toPairs = (array: any[]) => {
+  const result = {};
+  array.forEach(element => (result[element[0]] = element[1]));
+  return result;
+};
